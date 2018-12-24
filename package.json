@@ -1,0 +1,49 @@
+{
+  "name": "fast-food-fast-frontend",
+  "version": "1.0.0",
+  "description": "creating the fast-food-fast application front-end with reactjs and redux architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/el-Joft/Fast-Food-Fast-Frontend.git"
+  },
+  "keywords": [
+    "reactjs",
+    "redux"
+  ],
+  "author": "Omotayo Timothy Fehintolu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/el-Joft/Fast-Food-Fast-Frontend/issues"
+  },
+  "homepage": "https://github.com/el-Joft/Fast-Food-Fast-Frontend#readme",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/plugin-proposal-class-properties": "*",
+    "@babel/plugin-syntax-dynamic-import": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "@babel/preset-stage-2": "*",
+    "autoprefixer": "*",
+    "babel-loader": "*",
+    "css-loader": "^2.0.2",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "*",
+    "postcss-loader": "*",
+    "style-loader": "^0.23.1",
+    "url-loader": "*",
+    "webpack": "^4.28.2",
+    "webpack-cli": "*",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1"
+  }
+}
