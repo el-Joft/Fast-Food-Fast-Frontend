@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// import { Link, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Route from './routes/Routes';
 // import Users from './containers/Users';
 // import asyncComponent from './hoc/asyncComponent';
 
@@ -9,10 +10,10 @@ import React, { Component } from 'react';
 
 class App extends Component {
     render () {
-        return (
-            <div>
-              <h1>Welcome to Fast-Food-Fast</h1>
-            </div>
+      return (
+        <BrowserRouter>
+          <Route />
+        </BrowserRouter>
         );
     }
 }
