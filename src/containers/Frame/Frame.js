@@ -1,8 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Header from '../../components/UI/Header/header';
 import Footer from '../../components/UI/Footer/Footer';
 
-export default class Frame extends Component {
+class Frame extends Component {
+  state = {}
+
   render() {
     return (
       <div>
@@ -10,7 +12,7 @@ export default class Frame extends Component {
         Content
         <Footer />
       </div>
-    )
+    );
   }
 }
-
+export default Frame;

@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow testing testing the header with snapshots 1`] = `
+<div>
+  <div
+    className="header-1"
+  >
+    <div
+      className="logo"
+    >
+      <Link
+        replace={false}
+        to="/"
+      >
+        <img
+          alt=""
+          src="/public/images/fast-food-fast.png"
+        />
+        <div
+          className="logo-text"
+        >
+          <h2>
+            Fast Food Fast
+          </h2>
+        </div>
+      </Link>
+    </div>
+    <div
+      className="working-hours"
+    >
+      <img
+        alt=""
+        className="icons-telephone"
+        src="/public/images/icons/telephone.png"
+      />
+      <address
+        className="contact-info"
+      >
+        <Link
+          className="phone"
+          replace={false}
+          to="callto:#"
+        >
+          +234-80502000
+        </Link>
+        <br />
+        <span
+          className=""
+        >
+          Mon – Sat: 9:00–18:00
+        </span>
+      </address>
+    </div>
+    <div
+      className="social"
+    >
+      <ul>
+        <li
+          key="0"
+        >
+          <Link
+            replace={false}
+            to="/facebook"
+          >
+            <img
+              alt="item.alt"
+              src="/public/images/icons/facebook.png"
+            />
+          </Link>
+        </li>
+        <li
+          key="1"
+        >
+          <Link
+            replace={false}
+            to="/twitter"
+          >
+            <img
+              alt="item.alt"
+              src="/public/images/icons/twitter.png"
+            />
+          </Link>
+        </li>
+        <li
+          key="2"
+        >
+          <Link
+            replace={false}
+            to="/instagram"
+          >
+            <img
+              alt="item.alt"
+              src="/public/images/icons/instagram.png"
+            />
+          </Link>
+        </li>
+        <li
+          key="3"
+        >
+          <Link
+            replace={false}
+            to="/google"
+          >
+            <img
+              alt="item.alt"
+              src="/public/images/icons/google.png"
+            />
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <Navbar />
+</div>
+`;

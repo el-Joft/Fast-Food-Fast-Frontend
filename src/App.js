@@ -9,13 +9,15 @@ import Route from './routes/Routes';
 // });
 
 class App extends Component {
-    render () {
-      return (
-        <BrowserRouter>
-          <Route />
-        </BrowserRouter>
-        );
-    }
+  state = {}
+
+  render() {
+    return (
+      <BrowserRouter>
+        <Route />
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

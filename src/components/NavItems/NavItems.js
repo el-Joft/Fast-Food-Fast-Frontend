@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import './NavItems.scss'
+import './NavItems.scss';
 
 const NavItem = () => {
-  const items= [
+  const items = [
     {
       text: 'Home',
       link: '/',
@@ -19,32 +19,36 @@ const NavItem = () => {
     {
       text: 'Sign Up',
       link: '/signup',
-    }
-  ]
+    },
+  ];
 
-  const showItems = () => items.map((item, i) => 
-    <li key={i} >
+  const showItems = () => items.map((item, i) => (
+    <li key={i}>
       <Link to={item.link}>
         {item.text}
       </Link>
     </li>
-  )
+  ));
 
   return (
     <div>
       <nav>
-          <ul className="nav-bar">
-              {showItems()}
-              <li className="cart-section">
-                  <a href="checkout.html">
-                      <img src="/public/images/icons/cart.png" alt=""/>
-                      <span>Cart(<span id="cartSystem"></span>)</span>
-                  </a>
-              </li>
-          </ul>    
-        </nav>
+        <ul className="nav-bar">
+          {showItems()}
+          <li className="cart-section">
+            <a href="checkout.html">
+              <img src="/public/images/icons/cart.png" alt="" />
+              <span>
+Cart(
+                <span id="cartSystem" />
+)
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  )
-}
+  );
+};
 
 export default NavItem;
