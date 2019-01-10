@@ -1,14 +1,17 @@
-import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom';
+import React, { Component } from 'react';
+// import { Route, Switch } from 'react-router-dom';
 import Frame from '../containers/Frame/Frame';
 
+class Routes extends Component {
+  state = {}
 
-export default class Routes extends Component {
   render() {
     return (
       <div>
-        <Frame/>
+        <Frame />
       </div>
-    )
+    );
   }
 }
+
+export default Routes;
