@@ -16,7 +16,7 @@ describe('shallow testing', () => {
     expect(ul.children().length).toEqual(5);
   });
 
-  it.skip('should test the value of a particular div or element', () => {
+  it('should test the value of a particular div or element', () => {
     const wrapper = shallow(<NavItem />);
     // we can find using the element, id, class syntax etc.
     const h1 = wrapper.find('h1');
