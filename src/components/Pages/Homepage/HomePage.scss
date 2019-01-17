@@ -1,0 +1,255 @@
+
+
+.banner{
+  background: url('/public/images/banner-1.jpg') no-repeat;
+  background-size:cover;
+  height:450px;
+  width:100vw;
+  margin-top: -40px;
+}
+
+.banner-text{
+  margin: 40px;
+  width: 40%;
+  padding: 60px;
+}
+
+
+.banner-text h2{
+  line-height: 3em;
+  font-size: 40px;
+  color:#42ce9f;
+}
+.banner-text p{
+  font-size: 1.1em;
+  color:#42ce9f;
+}
+.menu-banner{
+  background: url('/public/images/banner-5.jpg') no-repeat;
+  background-size: cover;
+  height: 300px;
+  width:100vw;
+}
+.home-banner{
+  color: #495057!important;
+}
+
+.today-special{
+  background: #42ce9f;
+  color: white;
+  padding: 18px;
+ 
+}
+.today-special p{
+  margin-left: 40px;
+}
+.today-special-food{
+  font-family: Handlee;
+  font-size: 1.4em;
+}
+/* MENU */
+.menu{
+  margin-top: 20px;
+}
+
+
+.sweets-menu{
+  background: url('/public/images/banner-5.jpg') no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 20px;
+}
+.sweets-menu h3{
+  color: #fff!important;
+}
+
+.menu-text h3{
+  font-size: 2.5em;
+  border: 2px solid #42ce9f;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+  color: #495057;
+  
+
+}
+.menu-text a{
+  color: #495057;
+}
+
+
+.menu-text p{
+  width: 50%;
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+  font-size: 19px;
+}
+.menu-body{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  
+}
+
+.menu-section {
+  display: flex;
+  padding: 12px;
+  border-bottom: 2px solid #42ce9f;
+  width: 40%;
+  margin-left: 30px;
+}
+
+
+.menu-price p{
+  margin-top: -3px;
+  padding: 7px;
+ 
+}
+.menu-food{
+  width: 60%;
+  
+}
+.menu-food h3{
+  margin-bottom: 14px;
+}
+.menu-food p{
+  margin-right: 10px;
+}
+.menu-order{
+  margin-top: 10px;
+  border: 2px solid #42ce9f;
+  background: #42ce9f;
+  color: #fff;
+  padding: 3px;
+}
+.full-menu{
+  font-size: 25px!important;
+  padding: 5px!important;
+  width: 20%!important;
+  margin-top: 20px;
+}
+
+
+
+
+/* ABOUT */
+.about-banner{
+
+  background: url('/public/images/banner-3.jpg') no-repeat;
+  background-size: cover;
+  height: 300px;
+  width:100vw;
+
+}
+.about{
+  width: 80%;
+  text-align: justify;
+
+}
+.info{
+  height: 300px;
+  width: 100%;
+  /* background: #d9d9d9; */
+  margin-top: 20px;
+  background: url('/public/images/banner-4.jpg')no-repeat;
+  background-size:cover;
+}
+.info-text h3{
+  font-size: 2.3em;
+  font-family: Righteous;
+  text-align: center;
+  padding: 20px;
+}
+.info-text h1{
+  font-family: Kreon;
+  font-size: 3.0em;
+  text-align: center;
+  padding: 10px;
+  color: #ff0a10;
+}
+.about-paragraph{
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 40px;
+  width: 80%;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .logo img {
+    height: 70px;
+    width: 100px;
+    float: left;
+  }
+  .logo-text {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  .working-hours, .social, .nav-bar {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+  }
+  .banner-text {
+    padding: 7px;
+    width: unset;
+  }
+  .today-special-food {
+    font-family: Handlee;
+    font-size: 1.4em;
+    font-family: Handlee;
+    font-size: 1.0em;
+  }
+  .menu-banner {
+    height: 150px;
+  }
+  .menu-text {
+    h3 {
+      font-size: 1.2em;
+      padding: 1px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .menu-section {
+    margin: 10px;
+    width: 100%;
+  }
+  .full-menu {
+    font-size: 15px !important;
+    padding: 10px !important;
+    width: 30% !important;
+  }
+  .about-paragraph {
+    text-align: justify;
+    padding: 9px;
+    font-size: 1.0em;
+    line-height: 30px;
+    width: 100%;
+  }
+  .info-text h3 {
+    font-size: 1.7em;
+  }
+  .banner-text h2 {
+    font-size: 30px;
+  }
+  .checkout {
+    width: 90%;
+  }
+  .top-button {
+    width: 70%;
+  }
+  .history-head-text {
+    font-size: 1.0em;
+  }
+  .success-text {
+    margin-bottom: 30px;
+  }
+  .successful {
+    height: 340px;
+  }
+}
