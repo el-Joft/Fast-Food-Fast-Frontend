@@ -1,0 +1,126 @@
+
+
+/* FORM */
+
+.form-control {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #42ce9f;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ 
+  
+}
+
+.form-group {
+  margin:10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-group li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.form-group label{
+  margin:0 0 3px 0;
+  padding:0px;
+  display:block;
+  font-weight: bold;
+  font-size: 1.7;
+}
+
+.select {
+  border: 1px solid #42ce9f;
+}
+option {
+  color: #42ce9f;
+}
+
+.form-group .field-long{
+  width: 100%;
+}
+
+.form-group input[type=submit], .form-group input[type=button]{
+  background: #42ce9f;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff;
+}
+.form-group .field-divided{
+  width: 49%;
+}
+.form-group .required{
+  color:red;
+}
+/* this aspect was learnt from the MDN */
+/* https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms */
+/* MORE ON FORMS */
+
+.form-group {
+  input {
+    &[type=text]:focus, &[type=date]:focus, &[type=datetime]:focus, &[type=number]:focus, &[type=search]:focus, &[type=time]:focus, &[type=url]:focus, &[type=email]:focus, &[type=password]:focus {
+      -moz-box-shadow: 0 0 8px #88D5E9;
+      -webkit-box-shadow: 0 0 8px #88D5E9;
+      box-shadow: 0 0 8px #88D5E9;
+      border: 1px solid #88D5E9;
+    }
+  }
+  textarea:focus, select:focus {
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+  }
+}
+/* end of the aspect */
+
+
+
+.text-form{
+  text-align: center;
+  padding: 10px;
+
+}
+.menu_links {
+  cursor: pointer;
+}
+
+/* DELETE BUTTON */
+.btn-danger{
+    background: #ff0a10;
+    color: #fff;
+    border: 1px solid #ff0a10;
+    border-radius: 15%;
+    margin: 5px;
+}
+
+.btn-danger a{
+    color: #fff;
+}
+
+.btn-normal{
+    background: #42ce9f;
+    color: #fff;
+    border: 1px solid #42ce9f;
+    border-radius: 15%;
+    margin: 5px;
+}
+
+
+.btn-normal a{
+    color: #fff;
+}
+.complete-label{
+    font-size: 12px;
+    display: block;
+}
+
+
