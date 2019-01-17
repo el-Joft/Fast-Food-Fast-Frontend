@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import './HomePage.scss';
+import { Link } from 'react-router-dom';
+import Card from '../../UI/Card/Card';
 
 class Homepage extends Component {
   state = {
@@ -37,9 +39,9 @@ Welcome to Food Delivery, a place where you can order your favorite restaurant d
             <h3>Our Menu</h3>
             <p> "Our talented chefs prepare best meals for you"</p>
           </div>
-          <div className="menu-body" id="menu-body" />
+          <Card />
           <div className="menu-text">
-            <h3 className="full-menu"><a href="menu.html">View Full Menu</a></h3>
+            <h3 className="full-menu"><Link to='/menu'>View Full Menu</Link></h3>
           </div>
         </div>
         <section className="info">
