@@ -6,4 +6,8 @@ export const GET_ALL_MENUS = 'GET_ALL_MENUS';
 
 export const MENU_NOT_FOUND = 'MENU_NOT_FOUND';
 
-export const MENU_LOADING = 'MENU_LOADING';
+export const LOADING = 'LOADING';
+
+export const MAKE_AN_ORDER = 'MAKE_AN_ORDER';
+
+export const ADD_TO_CART = 'ADD_TO_CART';

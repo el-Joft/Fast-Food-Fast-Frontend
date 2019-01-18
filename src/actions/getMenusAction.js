@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 
-import { GET_ERRORS, GET_ALL_MENUS, MENU_LOADING } from './types';
+import { GET_ERRORS, GET_ALL_MENUS, LOADING } from './types';
 
 
 export const setMenuLoading = () => ({
-  type: MENU_LOADING,
+  type: LOADING,
 });
 
 export const getAllMenus = () => (dispatch) => {

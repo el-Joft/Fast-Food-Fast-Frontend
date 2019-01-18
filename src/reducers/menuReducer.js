@@ -1,4 +1,4 @@
-import { GET_ALL_MENUS, MENU_LOADING } from '../actions/types';
+import { GET_ALL_MENUS, LOADING } from '../actions/types';
 
 const initialState = {
   menu: null,
@@ -7,7 +7,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case MENU_LOADING:
+    case LOADING:
       return {
         ...state,
         loading: true,
