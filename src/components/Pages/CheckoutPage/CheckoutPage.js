@@ -5,6 +5,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import './CheckoutPage.scss';
 import { changeQuantity, checkoutOrder } from '../../../actions/orderAction';
+import { Link } from 'react-router-dom';
 
 
 class CheckoutPage extends Component {
@@ -99,7 +100,7 @@ class CheckoutPage extends Component {
                       </button>
                     )
 
-                    : <button type="submit" className="complete-order" disabled> Login to continue</button>
+                    : <button type="submit" className="complete-order" disabled><Link to='/login'> Login to continue</Link></button>
               }
                 </div>
               </form>
