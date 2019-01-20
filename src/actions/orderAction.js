@@ -1,7 +1,15 @@
-import { MAKE_AN_ORDER, ADD_TO_CART } from './types';
+import axios from 'axios';
+import {
+  MAKE_AN_ORDER,
+  ADD_TO_CART,
+  CHANGE_QUANTITY,
+  GET_ERRORS,
+  CHECKOUT_ORDER,
+  EMPTY_CART,
+} from './types';
 
 const cartArray = [];
-const addCart = payload => (dispatch) => {
+export const addCart = payload => (dispatch) => {
   dispatch({
     type: MAKE_AN_ORDER,
     payload,
@@ -17,5 +25,41 @@ const addCart = payload => (dispatch) => {
   });
 };
 
+export const changeQuantity = (id, quantity) => (dispatch) => {
+  dispatch({
+    type: CHANGE_QUANTITY,
+    payload: { id, quantity },
+  });
+};
 
-export default addCart;
+export const emptyCart = (payload) => {
+  localStorage.removeItem('cart');
+  return {
+    type: EMPTY_CART,
+    payload,
+  };
+};
+
+export const checkoutOrder = (value, token, history) => (dispatch) => {
+  axios({
+    method: 'post',
+    url: 'https://fffastapp.herokuapp.com/api/v1/orders',
+    data: value,
+    headers: {
+      'Content-Type': 'application/json',
+      token,
+    },
+  })
+    .then((res) => {
+      dispatch({
+        type: CHECKOUT_ORDER,
+        payload: res.data.result,
+      });
+      dispatch(emptyCart(null));
+      history.push('/success');
+    })
+    .catch(err => dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data,
+    }));
+};

@@ -48,9 +48,6 @@
 }
 .top-body{
   text-align: center; 
-
- 
-
 }
 .top-button{
   width: 30%;
@@ -93,4 +90,10 @@ table,thead,tbody,tfoot,tr, td,th{
 }
 .successful h3{
   font-size: 1.4em;
+}
+.cart-empty {
+  margin: 10px;
+  text-align: center;
+  padding: 50px;
+  font-size: 2em;
 }

@@ -5,15 +5,15 @@ import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import './NavItems.scss';
 import { logoutUser } from '../../actions/authActions';
-import addCart from '../../actions/orderAction';
+import { addCart } from '../../actions/orderAction';
 
 const NavItem = (props) => {
   const { isAuthenticated, user } = props.auth;
   let showItems = [];
   const items = [
     {
-      text: 'Home',
-      link: '/',
+      text: 'Menu',
+      link: '/menu',
     },
     {
       text: 'About Us',
@@ -30,8 +30,8 @@ const NavItem = (props) => {
   ];
   const authenticated = [
     {
-      text: 'Home',
-      link: '/',
+      text: 'Menu',
+      link: '/menu',
     },
     {
       text: 'About Us',
@@ -97,14 +97,14 @@ const NavItem = (props) => {
             ) : ''
           }
           <li className="cart-section">
-            <a href="/checkout">
+            <Link to="/checkout">
               <img src="/public/images/icons/cart.png" alt="" />
               <span>
 Cart(
                 {cart()}
 )
               </span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

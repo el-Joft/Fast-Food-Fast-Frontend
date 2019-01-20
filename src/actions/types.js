@@ -11,3 +11,9 @@ export const LOADING = 'LOADING';
 export const MAKE_AN_ORDER = 'MAKE_AN_ORDER';
 
 export const ADD_TO_CART = 'ADD_TO_CART';
+
+export const CHANGE_QUANTITY = 'CHANGE_QUANTITY';
+
+export const CHECKOUT_ORDER = 'CHECKOUT_ORDER';
+
+export const EMPTY_CART = 'EMPTY_CART';

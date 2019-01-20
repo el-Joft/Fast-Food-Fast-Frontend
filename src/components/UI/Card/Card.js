@@ -3,20 +3,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getAllMenus } from '../../../actions/getMenusAction';
-import addCart from '../../../actions/orderAction';
+import { addCart } from '../../../actions/orderAction';
 
 
 class Card extends Component {
-  state = {
-
-  }
-
   componentDidMount() {
     this.props.getAllMenus();
   }
 
   addToCart(menuData) {
-    this.props.addCart(menuData);
+    const item = Object.assign({}, menuData, { quantity: 1 });
+    this.props.addCart(item);
   }
 
   renderCard = () => {
