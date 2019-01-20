@@ -1,18 +1,19 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import './NavItems.scss';
 import { logoutUser } from '../../actions/authActions';
-
+import { addCart } from '../../actions/orderAction';
 
 const NavItem = (props) => {
   const { isAuthenticated, user } = props.auth;
   let showItems = [];
   const items = [
     {
-      text: 'Home',
-      link: '/',
+      text: 'Menu',
+      link: '/menu',
     },
     {
       text: 'About Us',
@@ -29,8 +30,8 @@ const NavItem = (props) => {
   ];
   const authenticated = [
     {
-      text: 'Home',
-      link: '/',
+      text: 'Menu',
+      link: '/menu',
     },
     {
       text: 'About Us',
@@ -42,6 +43,15 @@ const NavItem = (props) => {
     },
   ];
 
+  const cart = () => {
+    const cartItem = localStorage.getItem('cart');
+    let cartLength = 0;
+    if (cartItem) {
+      const parsedItem = JSON.parse(cartItem);
+      cartLength = parsedItem.length;
+    }
+    return cartLength;
+  };
 
   if (isAuthenticated) {
     showItems = () => authenticated.map((item, i) => (
@@ -87,14 +97,14 @@ const NavItem = (props) => {
             ) : ''
           }
           <li className="cart-section">
-            <a href="checkout.html">
+            <Link to="/checkout">
               <img src="/public/images/icons/cart.png" alt="" />
               <span>
 Cart(
-                <span id="cartSystem" />
+                {cart()}
 )
               </span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -109,6 +119,7 @@ NavItem.propTypes = {
 
 const mapStateToProps = state => ({
   auth: state.auth,
+  order: state.order,
 });
 
-export default connect(mapStateToProps, { logoutUser })(NavItem);
+export default connect(mapStateToProps, { logoutUser, addCart })(NavItem);

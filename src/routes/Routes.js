@@ -6,6 +6,8 @@ import SignupPage from '../components/Pages/SignupPage/SignupPage';
 import NotFound from '../components/UI/NotFound/NotFound';
 import LoginPage from '../components/Pages/LoginPage/LoginPage';
 import MenuPage from '../components/Pages/MenuPage/MenuPage';
+import CheckoutPage from '../components/Pages/CheckoutPage/CheckoutPage';
+import SuccessPage from '../components/Pages/SuccessPage/SuccessPage';
 
 class Routes extends Component {
   state = {}
@@ -16,6 +18,8 @@ class Routes extends Component {
         <Frame>
           <Switch>
             <Route exact path='/signup' component={SignupPage} />
+            <Route path='/success' component={SuccessPage} />
+            <Route path='/checkout' component={CheckoutPage} />
             <Route path='/menu' component={MenuPage} />
             <Route path='/login' component={LoginPage} />
             <Route exact path='/' component={Homepage} />

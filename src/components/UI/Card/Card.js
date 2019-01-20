@@ -3,15 +3,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getAllMenus } from '../../../actions/getMenusAction';
+import { addCart } from '../../../actions/orderAction';
 
 
 class Card extends Component {
-  state = {
-
-  }
-
   componentDidMount() {
     this.props.getAllMenus();
+  }
+
+  addToCart(menuData) {
+    const item = Object.assign({}, menuData, { quantity: 1 });
+    this.props.addCart(item);
   }
 
   renderCard = () => {
@@ -28,10 +30,18 @@ class Card extends Component {
               <strike>N</strike>
               {item.price}
             </p>
-            <a href="checkout.html">
+            <div to="/checkout">
               {' '}
-              <span className="menu-order">Make Order</span>
-            </a>
+              <span
+                role="searchbox"
+                onKeyPress={() => this.addToCart(item)}
+                onClick={menuData => this.addToCart(item)}
+                tabIndex="-1"
+                className="menu-order"
+              >
+                Make Order
+              </span>
+            </div>
           </div>
 
         </div>
@@ -50,6 +60,7 @@ class Card extends Component {
 
 Card.propTypes = {
   getAllMenus: PropTypes.func.isRequired,
+  addCart: PropTypes.func.isRequired,
   menu: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
 };
@@ -59,6 +70,7 @@ Card.propTypes = {
 const mapStateToProps = state => ({
   menu: state.menu,
   errors: state.errors,
+  order: state.order,
 });
 
-export default connect(mapStateToProps, { getAllMenus })(Card);
+export default connect(mapStateToProps, { getAllMenus, addCart })(Card);

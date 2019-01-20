@@ -123,6 +123,12 @@
   background: #42ce9f;
   color: #fff;
   padding: 3px;
+  cursor: pointer;
+}
+.menu-order:hover {
+  background: #fff;
+  color: #42ce9f;
+  border: 1px solid #42ce9f;
 }
 .full-menu{
   font-size: 25px!important;
