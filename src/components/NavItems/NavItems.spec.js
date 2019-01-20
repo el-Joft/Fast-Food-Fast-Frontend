@@ -4,10 +4,9 @@ import NavItem from './NavItems';
 
 
 describe('shallow testing', () => {
-  it('should test the component if it renders anything', () => {
+  it.only('should test the component if it renders anything', () => {
     const wrapper = shallow(<NavItem />);
-    const header = wrapper.find('ul');
-    expect(header.length).toEqual(1);
+    expect(wrapper.length).toEqual(1);
   });
 
   it('should test the ul tags to have the li children', () => {

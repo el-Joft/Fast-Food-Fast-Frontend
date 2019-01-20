@@ -19,7 +19,7 @@ if (localStorage.userToken) {
 
   // check the token expiry time
   const currentTime = Date.now() / 1000;
-  if (decoded.exp < currentTime ) {
+  if (decoded.exp < currentTime) {
     store.dispatch(logoutUser());
     // clear the token in localstorage
     // redirect to login
