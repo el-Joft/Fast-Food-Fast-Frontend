@@ -3,6 +3,7 @@ import jwtDecode from 'jwt-decode';
 import setAuthToken from '../utils/setAuthToken';
 
 import { GET_ERRORS, SET_CURRENT_USER } from './types';
+import { emptyCart } from './orderAction';
 
 // set user
 export const setCurrentUser = decoded => ({
@@ -60,5 +61,6 @@ export const logoutUser = () => (dispatch) => {
   // remove auth header for future request
   setAuthToken(false);
   // set the current user to an empty object which set isAuthenticated to false
+  dispatch(emptyCart(null));
   dispatch(setCurrentUser({}));
 };

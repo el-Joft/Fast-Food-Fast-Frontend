@@ -17,3 +17,5 @@ export const CHANGE_QUANTITY = 'CHANGE_QUANTITY';
 export const CHECKOUT_ORDER = 'CHECKOUT_ORDER';
 
 export const EMPTY_CART = 'EMPTY_CART';
+
+export const GET_ORDERS = 'GET_ORDERS';

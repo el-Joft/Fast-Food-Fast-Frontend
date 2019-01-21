@@ -1,0 +1,40 @@
+/* HISTORY */
+.history{
+    margin-bottom: 50px;
+}
+.history-head-text{
+    text-align: center;
+    font-size: 1.7em;
+    padding: 13px;
+    border: 2px solid #42ce9f;
+    width: 40%;
+    margin-top: 14px;
+}
+.history-body{
+    display: flex;
+    width: 70%;
+    border-bottom: 2px solid #42ce9f;
+    border-top: 2px solid #42ce9f;
+    margin-top: 20px; 
+}
+.history-item{
+    padding: 10px;
+}
+.history-item h3{
+    background: #42ce9f;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+.history-item p{
+    margin-top: 10px;
+}
+.item{
+    flex-grow: 1;
+    width: 40%;
+}
+.history-quantity, .history-date,
+.history-price, .history-time, .history-total
+{
+    text-align: center;
+}

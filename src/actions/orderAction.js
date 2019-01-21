@@ -6,6 +6,7 @@ import {
   GET_ERRORS,
   CHECKOUT_ORDER,
   EMPTY_CART,
+  GET_ORDERS,
 } from './types';
 
 const cartArray = [];
@@ -57,6 +58,48 @@ export const checkoutOrder = (value, token, history) => (dispatch) => {
       });
       dispatch(emptyCart(null));
       history.push('/success');
+    })
+    .catch(err => dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data,
+    }));
+};
+
+export const getOrders = (token, id) => (dispatch) => {
+  axios({
+    method: 'get',
+    url: `http://fffastapp.herokuapp.com/api/v1/users/${id}/orders`,
+    headers: {
+      'Content-Type': 'application/json',
+      token,
+    },
+  })
+    .then((res) => {
+      dispatch({
+        type: GET_ORDERS,
+        payload: res.data.result,
+      });
+    })
+    .catch(err => dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data,
+    }));
+};
+
+export const getAdminOrders = token => (dispatch) => {
+  axios({
+    method: 'get',
+    url: 'http://fffastapp.herokuapp.com/api/v1/orders',
+    headers: {
+      'Content-Type': 'application/json',
+      token,
+    },
+  })
+    .then((res) => {
+      dispatch({
+        type: GET_ORDERS,
+        payload: res.data.result,
+      });
     })
     .catch(err => dispatch({
       type: GET_ERRORS,
