@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getAdminOrders } from '../../../actions/orderAction';
+import { getAdminOrders, deleteAnOrder } from '../../../actions/orderAction';
 
 class AdminOrderPage extends Component {
   componentWillMount() {
@@ -8,8 +8,15 @@ class AdminOrderPage extends Component {
     this.props.getAdminOrders(token);
   }
 
-  renderCard = () => this.props.orders.map(item => (
-    <tbody>
+  deleteOrder = (e, id) => {
+    e.preventDefault();
+    const token = localStorage.getItem('userToken');
+    const { history } = this.props;
+    this.props.deleteAnOrder(id, token, history);
+  };
+
+  renderCard = () => this.props.orders.map((item, i) => (
+    <tbody key={i}>
       <tr>
         <td>{item.name}</td>
         <td>{item.description}</td>
@@ -18,11 +25,8 @@ class AdminOrderPage extends Component {
         <td>{item.firstname}</td>
         <td>{item.totalprice}</td>
         <td>
-          <div className="btn-normal"><a href="edit_food.html">Accept</a></div>
-          <div className="btn-danger"><a href="">Reject</a></div>
-          <div className="complete-label">
-            <label htmlFor="complete">Mark as complete</label>
-            <input type="checkbox" name="complete" id="" />
+          <div className="">
+            <button onClick={e => this.deleteOrder(e, item.id)} className='delete-order' type='submit'>Delete</button>
           </div>
         </td>
       </tr>
@@ -31,8 +35,16 @@ class AdminOrderPage extends Component {
 
   render() {
     return (
-      <table className="admin-table">
-        <thead className="table-head">
+      <div>
+        {
+          this.props.success.status
+            ? <div className='success'>Sucessfully deleted an order</div>
+            : null
+        }
+
+        <table className="admin-table">
+
+          <thead className="table-head">
           <tr>
             <th>Item</th>
             <th>Description</th>
@@ -51,11 +63,12 @@ Total (
             <th>Actions</th>
           </tr>
         </thead>
-        {
+          {
           this.props.orders === null
             ? null
             : this.renderCard()}
-      </table>
+        </table>
+      </div>
     );
   }
 }
@@ -63,6 +76,8 @@ Total (
 const mapStateToProps = state => ({
   auth: state.auth,
   orders: state.orders.orders,
+  success: state.success,
+  errors: state.errors,
 });
 
-export default connect(mapStateToProps, { getAdminOrders })(AdminOrderPage);
+export default connect(mapStateToProps, { getAdminOrders, deleteAnOrder })(AdminOrderPage);

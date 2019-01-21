@@ -20,7 +20,7 @@ if (localStorage.userToken) {
 
   // check the token expiry time
   const currentTime = Date.now() / 1000;
-  if (decoded.exp < currentTime ) {
+  if (decoded.exp < currentTime) {
     store.dispatch(logoutUser());
     store.dispatch(emptyCart(null));
     // clear the token in localstorage

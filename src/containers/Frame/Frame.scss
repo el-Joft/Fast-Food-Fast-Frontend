@@ -123,4 +123,23 @@ option {
     display: block;
 }
 
+.delete-order {
+  padding: 10px;
+  background: #ff0a10;
+  color: #fff;
+  border: 1px solid #ff0a10;
+  border-radius: 20%;
+  cursor: pointer;
+}
 
+.delete-order:hover {
+  background: #fff;
+  color: #ff0a10;
+}
+
+.success {
+  padding: 15px;
+  color: #42ce9f;
+  text-align: center;
+  font-size: 1.2em;
+}

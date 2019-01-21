@@ -19,3 +19,7 @@ export const CHECKOUT_ORDER = 'CHECKOUT_ORDER';
 export const EMPTY_CART = 'EMPTY_CART';
 
 export const GET_ORDERS = 'GET_ORDERS';
+
+export const DELETE_ORDER = 'DELETE_ORDER';
+
+export const GET_SUCCESS = 'GET_SUCCESS';
