@@ -8,6 +8,8 @@ import LoginPage from '../components/Pages/LoginPage/LoginPage';
 import MenuPage from '../components/Pages/MenuPage/MenuPage';
 import CheckoutPage from '../components/Pages/CheckoutPage/CheckoutPage';
 import SuccessPage from '../components/Pages/SuccessPage/SuccessPage';
+import UserDashboardPage from '../components/Pages/UserDashboardPage/UserDashboardPage';
+import AdminOrderPage from '../components/Pages/AdminOrderPage/AdminOrderPage';
 
 class Routes extends Component {
   state = {}
@@ -18,11 +20,13 @@ class Routes extends Component {
         <Frame>
           <Switch>
             <Route exact path='/signup' component={SignupPage} />
+            <Route path='/dashboard' component={UserDashboardPage} />
             <Route path='/success' component={SuccessPage} />
             <Route path='/checkout' component={CheckoutPage} />
             <Route path='/menu' component={MenuPage} />
             <Route path='/login' component={LoginPage} />
             <Route exact path='/' component={Homepage} />
+            <Route exact path='/admin' component={AdminOrderPage} />
             <Route component={NotFound} />
           </Switch>
         </Frame>

@@ -6,6 +6,7 @@ import store from './store/index';
 import Route from './routes/Routes';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './actions/authActions';
+import { emptyCart } from './actions/orderAction';
 
 
 // check for token
@@ -21,6 +22,7 @@ if (localStorage.userToken) {
   const currentTime = Date.now() / 1000;
   if (decoded.exp < currentTime ) {
     store.dispatch(logoutUser());
+    store.dispatch(emptyCart(null));
     // clear the token in localstorage
     // redirect to login
     window.location.href = '/login';
