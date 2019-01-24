@@ -17,7 +17,7 @@ export const setCurrentUser = decoded => ({
 export const registerUser = userData => (dispatch) => {
   axios.post('https://fffastapp.herokuapp.com/api/v1/auth/signup', userData)
     .then((res) => {
-    // save token to local storage
+      // save token to local storage
       const { token } = res.data;
       // set token to local storage
       // Note: Localstorage store strings
@@ -63,4 +63,5 @@ export const logoutUser = () => (dispatch) => {
   // set the current user to an empty object which set isAuthenticated to false
   dispatch(emptyCart(null));
   dispatch(setCurrentUser({}));
+  window.location.href = '/login';
 };

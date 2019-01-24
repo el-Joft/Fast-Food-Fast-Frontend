@@ -4,6 +4,7 @@ import errorReducer from './errorReducer';
 import menuReducer from './menuReducer';
 import orderReducer from './orderReducer';
 import getOrdersReducer from './getOrdersReducer';
+import successReducer from './successReducer';
 
 export default combineReducers({
   auth: authReducer,
@@ -11,4 +12,5 @@ export default combineReducers({
   menu: menuReducer,
   order: orderReducer,
   orders: getOrdersReducer,
+  success: successReducer,
 });

@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/no-unescaped-entities,react/forbid-prop-types */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/label-has-for */
 /* eslint-disable jsx-a11y/label-has-associated-control */
@@ -90,7 +90,7 @@ Password
             <p>
 Don't have an account?
               {' '}
-              <Link to="/signupl">Register</Link>
+              <Link to="/signup">Register</Link>
             </p>
           </div>
         </div>

@@ -1,14 +1,20 @@
-/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/destructuring-assignment,react/forbid-prop-types */
 import React, { Component } from 'react';
-import { PropTypes } from 'prop-types';
-import axios from 'axios';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import './CheckoutPage.scss';
-import { changeQuantity, checkoutOrder } from '../../../actions/orderAction';
 import { Link } from 'react-router-dom';
+import { changeQuantity, checkoutOrder } from '../../../actions/orderAction';
 
 
 class CheckoutPage extends Component {
+  componentDidMount() {
+    const { isAuthenticated } = this.props.auth;
+    if (!isAuthenticated) {
+      this.props.history.push('/login');
+    }
+  }
+
   submitData = (e) => {
     e.preventDefault();
     const { isAuthenticated, user } = this.props.auth;
@@ -27,8 +33,14 @@ class CheckoutPage extends Component {
           this.props.checkoutOrder(value, token, history);
         });
       } else {
+        submitValue.map((data) => {
+          value = {
+            menuid: data.menuid,
+            quantity: data.quantity,
+            orderedby: user.id,
+          };
+        });
         this.props.checkoutOrder(value, token, history);
-        console.log('solutions', token);
       }
     }
   };
@@ -117,6 +129,13 @@ class CheckoutPage extends Component {
     );
   }
 }
+
+CheckoutPage.propTypes = {
+  auth: PropTypes.object.isRequired,
+  cart: PropTypes.object.isRequired,
+  checkoutOrder: PropTypes.func.isRequired,
+};
+
 
 const mapStateToProps = state => ({
   auth: state.auth,

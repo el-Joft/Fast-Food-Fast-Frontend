@@ -1,4 +1,4 @@
-import { LOADING, GET_ORDERS } from '../actions/types';
+import { LOADING, GET_ORDERS, DELETE_ORDER } from '../actions/types';
 
 const initialState = {
   orders: null,
@@ -17,6 +17,11 @@ export default (state = initialState, action) => {
         ...state,
         orders: action.payload,
         loading: false,
+      };
+    case DELETE_ORDER:
+      return {
+        ...state,
+        orders: action.payload,
       };
     default:
       return state;

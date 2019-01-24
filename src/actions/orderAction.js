@@ -7,6 +7,8 @@ import {
   CHECKOUT_ORDER,
   EMPTY_CART,
   GET_ORDERS,
+  DELETE_ORDER,
+  GET_SUCCESS,
 } from './types';
 
 const cartArray = [];
@@ -100,6 +102,28 @@ export const getAdminOrders = token => (dispatch) => {
         type: GET_ORDERS,
         payload: res.data.result,
       });
+    })
+    .catch(err => dispatch({
+      type: GET_ERRORS,
+      payload: err.response.data,
+    }));
+};
+
+export const deleteAnOrder = (id, token, history) => (dispatch) => {
+  axios({
+    method: 'delete',
+    url: `http://fffastapp.herokuapp.com/api/v1/orders/${id}`,
+    headers: {
+      'Content-Type': 'application/json',
+      token,
+    },
+  })
+    .then((res) => {
+      dispatch({
+        type: GET_SUCCESS,
+        payload: res.data,
+      });
+      window.location.reload();
     })
     .catch(err => dispatch({
       type: GET_ERRORS,
