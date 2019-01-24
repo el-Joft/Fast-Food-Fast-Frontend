@@ -39,7 +39,7 @@ const NavItem = (props) => {
     },
     {
       text: 'Welcome',
-      link: '/userdashboard',
+      link: '/dashboard',
     },
   ];
 

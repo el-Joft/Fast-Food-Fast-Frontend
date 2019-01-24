@@ -2,13 +2,16 @@
 import React, { Component } from 'react';
 import './HomePage.scss';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Card from '../../UI/Card/Card';
+import { getOrders } from '../../../actions/orderAction';
 
 class Homepage extends Component {
   state = {
 
   }
-
+  
   render() {
     return (
       <div>
@@ -50,9 +53,11 @@ Welcome to Food Delivery, a place where you can order your favorite restaurant d
           </div>
           <div className="about-paragraph">
             <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptates laborum blanditiis vitae
-                    recusandae eaque ea ipsa magnam. Perspiciatis labore veniam recusandae excepturi
-                    repellendus ea molestias est reprehenderit veritatis sequi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nulla, voluptates laborum blanditiis vitae
+              recusandae eaque ea ipsa magnam.
+              Perspiciatis labore veniam recusandae excepturi
+              repellendus ea molestias est reprehenderit veritatis sequi.
             </p>
 
           </div>
@@ -62,4 +67,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptates labor
   }
 }
 
-export default Homepage;
+Homepage.propTypes = {
+  auth: PropTypes.object.isRequired,
+  isAuthenticated: PropTypes.bool.isRequired,
+  // history: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps, {})(Homepage);

@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getAdminOrders, deleteAnOrder } from '../../../actions/orderAction';
 
 class AdminOrderPage extends Component {
   componentWillMount() {
-    const token = localStorage.getItem('userToken');
-    this.props.getAdminOrders(token);
+    const { user } = this.props.auth;
+    if (!user || user.id !== 1) {
+      this.props.history.push('/login');
+    }
+    if (user.id === 1) {
+      const token = localStorage.getItem('userToken');
+      this.props.getAdminOrders(token);
+    }
   }
 
   deleteOrder = (e, id) => {
@@ -45,24 +52,24 @@ class AdminOrderPage extends Component {
         <table className="admin-table">
 
           <thead className="table-head">
-          <tr>
-            <th>Item</th>
-            <th>Description</th>
-            <th>
+            <tr>
+              <th>Item</th>
+              <th>Description</th>
+              <th>
 Price (
-              <strike>N</strike>
+                <strike>N</strike>
 )
-            </th>
-            <th>Qty</th>
-            <th>User</th>
-            <th>
+              </th>
+              <th>Qty</th>
+              <th>User</th>
+              <th>
 Total (
-              <strike>N</strike>
+                <strike>N</strike>
 )
-            </th>
-            <th>Actions</th>
-          </tr>
-        </thead>
+              </th>
+              <th>Actions</th>
+            </tr>
+          </thead>
           {
           this.props.orders === null
             ? null
@@ -72,6 +79,11 @@ Total (
     );
   }
 }
+AdminOrderPage.propTypes = {
+  getAdminOrders: PropTypes.func.isRequired,
+  deleteAnOrder: PropTypes.func.isRequired,
+  // history: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = state => ({
   auth: state.auth,

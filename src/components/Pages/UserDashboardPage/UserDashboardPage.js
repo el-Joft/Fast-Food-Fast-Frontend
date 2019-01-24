@@ -1,15 +1,20 @@
+/* eslint-disable react/forbid-prop-types,react/require-default-props */
 import React, { Component } from 'react';
 import './UserDashboardPage.scss';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getOrders } from '../../../actions/orderAction';
 
 class UserDashboardPage extends Component {
-  state = {}
-
   componentWillMount() {
-    const token = localStorage.getItem('userToken');
-    const { id } = this.props.auth.user;
-    this.props.getOrders(token, id);
+    const { isAuthenticated } = this.props.auth;
+    if (isAuthenticated) {
+      const token = localStorage.getItem('userToken');
+      const { id } = this.props.auth.user;
+      this.props.getOrders(token, id);
+    } else {
+      this.props.history.push('/login');
+    }
   }
 
 
@@ -79,6 +84,14 @@ class UserDashboardPage extends Component {
     );
   }
 }
+
+UserDashboardPage.propTypes = {
+  getOrders: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired,
+  orders: PropTypes.object,
+  isAuthenticated: PropTypes.bool.isRequired,
+  // history: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = state => ({
   auth: state.auth,
