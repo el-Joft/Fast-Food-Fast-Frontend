@@ -98,7 +98,7 @@ const NavItem = (props) => {
           }
           <li className="cart-section">
             <Link to="/checkout">
-              <img src="/public/images/icons/cart.png" alt="" />
+              <img src="/src/public/images/icons/cart.png" alt="" />
               <span>
 Cart(
                 {cart()}

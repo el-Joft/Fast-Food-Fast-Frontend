@@ -4,7 +4,7 @@ const SuccessPage = () => (
   <section>
     <div className="successful">
       <div>
-        <img src="/public/images/good.jpg" alt="success" />
+        <img src="/src/public/images/good.jpg" alt="success" />
       </div>
       <div className="success-text">
         <h3>Successfully made an Order</h3>
