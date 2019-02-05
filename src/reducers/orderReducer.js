@@ -31,8 +31,8 @@ export default (state = initialState, action) => {
     case CHANGE_QUANTITY:
       return {
         ...state,
-        cart: state.cart.map(item => (item.id !== action.payload.id ? item : 
-          Object.assign({}, item, action.payload))),
+        cart: state.cart.map(item => (item.id !== action.payload.id ? item
+          : Object.assign({}, item, action.payload))),
       };
     case CHECKOUT_ORDER:
       return {

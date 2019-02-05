@@ -7,7 +7,7 @@ const Header = () => {
   const logo = () => (
     <div className='logo'>
       <Link to='/'>
-        <img src='/public/images/fast-food-fast.png' alt="" />
+        <img src='/src/public/images/fast-food-fast.png' alt="" />
         <div className='logo-text'><h2>Fast Food Fast</h2></div>
       </Link>
     </div>
@@ -15,7 +15,7 @@ const Header = () => {
 
   const workingHours = () => (
     <div className="working-hours">
-      <img className="icons-telephone" src="/public/images/icons/telephone.png" alt="" />
+      <img className="icons-telephone" src="/src/public/images/icons/telephone.png" alt="" />
       <address className="contact-info">
         <Link to='callto:#' className="phone">+234-80502000</Link>
         <br />
