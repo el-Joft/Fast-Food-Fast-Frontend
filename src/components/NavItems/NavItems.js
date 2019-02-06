@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -7,7 +9,7 @@ import './NavItems.scss';
 import { logoutUser } from '../../actions/authActions';
 import { addCart } from '../../actions/orderAction';
 
-const NavItem = (props) => {
+export const NavItem = (props) => {
   const { isAuthenticated, user } = props.auth;
   let showItems = [];
   const items = [

@@ -14,7 +14,7 @@ exports[`shallow testing testing the header with snapshots 1`] = `
       >
         <img
           alt=""
-          src="/public/images/fast-food-fast.png"
+          src="/src/public/images/fast-food-fast.png"
         />
         <div
           className="logo-text"
@@ -31,7 +31,7 @@ exports[`shallow testing testing the header with snapshots 1`] = `
       <img
         alt=""
         className="icons-telephone"
-        src="/public/images/icons/telephone.png"
+        src="/src/public/images/icons/telephone.png"
       />
       <address
         className="contact-info"

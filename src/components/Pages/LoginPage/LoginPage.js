@@ -10,21 +10,20 @@ import { loginUser } from '../../../actions/authActions';
 
 import './LoginPage.scss';
 
-class LoginPage extends Component {
+export class LoginPage extends Component {
   state = {
     email: '',
     password: '',
     errors: {},
   }
 
-  componentDidMount () {
+  componentDidMount() {
     if (this.props.auth.isAuthenticated) {
       this.props.history.push('/');
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
     if (nextProps.auth.isAuthenticated) {
       nextProps.history.push('/');
     }
@@ -104,7 +103,7 @@ LoginPage.propTypes = {
   loginUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
-  // history: PropTypes.func.isRequired,
+  history: PropTypes.string.isRequired,
 };
 
 // we get values here using the this.props.errors/auth
@@ -113,6 +112,5 @@ const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors,
 });
-
 
 export default connect(mapStateToProps, { loginUser })(LoginPage);

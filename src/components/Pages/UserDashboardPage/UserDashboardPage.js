@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/forbid-prop-types,react/require-default-props */
 import React, { Component } from 'react';
 import './UserDashboardPage.scss';
@@ -5,7 +6,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getOrders } from '../../../actions/orderAction';
 
-class UserDashboardPage extends Component {
+export class UserDashboardPage extends Component {
   componentWillMount() {
     const { isAuthenticated } = this.props.auth;
     if (isAuthenticated) {
@@ -18,10 +19,10 @@ class UserDashboardPage extends Component {
   }
 
 
-  renderCard = () => this.props.orders.map((item, key) => (
+  renderCard = () => this.props.orders.map(item => (
 
 
-    <div key={key} className="history-body">
+    <div key={item.id} className="history-body">
 
       <div className="history-item item">
 
@@ -53,14 +54,6 @@ class UserDashboardPage extends Component {
           {item.totalprice}
         </p>
       </div>
-      {/* <div className="history-item history-date">
-        <h3>Date</h3>
-        <p>24/5/2018</p>
-      </div>
-      <div className="history-item history-time">
-        <h3>Time</h3>
-        <p>12:45pm</p>
-      </div> */}
     </div>
 
   ));
@@ -90,7 +83,7 @@ UserDashboardPage.propTypes = {
   auth: PropTypes.object.isRequired,
   orders: PropTypes.object,
   isAuthenticated: PropTypes.bool.isRequired,
-  // history: PropTypes.func.isRequired,
+  history: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = state => ({

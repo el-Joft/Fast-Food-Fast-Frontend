@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import jwtDecode from 'jwt-decode';
@@ -28,18 +28,12 @@ if (localStorage.userToken) {
     window.location.href = '/login';
   }
 }
-class App extends Component {
-  state = {}
-
-  render() {
-    return (
-      <Provider store={store}>
-        <BrowserRouter>
-          <Route />
-        </BrowserRouter>
-      </Provider>
-    );
-  }
-}
+const App = () => (
+  <Provider store={store}>
+    <BrowserRouter>
+      <Route />
+    </BrowserRouter>
+  </Provider>
+);
 
 export default App;

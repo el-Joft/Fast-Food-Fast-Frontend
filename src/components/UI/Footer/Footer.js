@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Footer.scss';
 import { CURRENT_YEAR } from '../../../helpers/helpers';
 
-const Footer = () => (
+export const Footer = () => (
   <footer>
     <div className="footer footer-home">
       <div className="contact-form">

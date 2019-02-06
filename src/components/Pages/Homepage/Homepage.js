@@ -1,3 +1,6 @@
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable react/no-unused-prop-types */
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 import './HomePage.scss';
@@ -5,13 +8,13 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Card from '../../UI/Card/Card';
-import { getOrders } from '../../../actions/orderAction';
+// import { getOrders } from '../../../actions/orderAction';
 
-class Homepage extends Component {
+export class Homepage extends Component {
   state = {
 
   }
-  
+
   render() {
     return (
       <div>

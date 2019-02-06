@@ -1,3 +1,6 @@
+/* eslint-disable consistent-return */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
@@ -6,7 +9,7 @@ import { getAllMenus } from '../../../actions/getMenusAction';
 import { addCart } from '../../../actions/orderAction';
 
 
-class Card extends Component {
+export class Card extends Component {
   componentDidMount() {
     this.props.getAllMenus();
   }

@@ -1,8 +1,9 @@
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import './Navbar.scss';
 import NavItem from '../../NavItems/NavItems';
 
-const Navbar = () => (
+export const Navbar = () => (
   <div>
     <NavItem />
   </div>

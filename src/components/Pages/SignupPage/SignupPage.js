@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/label-has-for */
@@ -10,7 +11,7 @@ import { connect } from 'react-redux';
 import './SignupPage.scss';
 import { registerUser } from '../../../actions/authActions';
 
-class SignupPage extends Component {
+export class SignupPage extends Component {
   state = {
     firstname: '',
     lastname: '',
@@ -138,15 +139,6 @@ Password
                 </label>
                 <input onChange={this.onChange} value={this.state.password} type="password" name="password" className="form-control field-long" required />
               </li>
-              {/* <li>
-                <label>
-Confirm Password
-                  {' '}
-                  <span className="required">*</span>
-                </label>
-                <input onChange={this.onChange} value={this.state.confirmPassword} type="password" name="confirmPassword" className="form-control field-long" required />
-              </li> */}
-
               <li>
                 <input type="submit" value="Submit" />
               </li>
@@ -170,6 +162,7 @@ SignupPage.propTypes = {
   registerUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object.isRequired,
+  history: PropTypes.string.isRequired,
 };
 
 // we get values here using the this.props.errors/auth
