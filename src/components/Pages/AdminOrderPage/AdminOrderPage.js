@@ -1,9 +1,12 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getAdminOrders, deleteAnOrder } from '../../../actions/orderAction';
 
-class AdminOrderPage extends Component {
+export class AdminOrderPage extends Component {
   componentWillMount() {
     const { user } = this.props.auth;
     if (!user || user.id !== 1) {
@@ -82,7 +85,10 @@ Total (
 AdminOrderPage.propTypes = {
   getAdminOrders: PropTypes.func.isRequired,
   deleteAnOrder: PropTypes.func.isRequired,
-  // history: PropTypes.func.isRequired,
+  history: PropTypes.string.isRequired,
+  auth: PropTypes.object.isRequired,
+  orders: PropTypes.array.isRequired,
+  success: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = state => ({

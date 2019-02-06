@@ -1,0 +1,2812 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render the component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignupPage
+    auth={
+      Object {
+        "isAuthenticated": true,
+        "user": Object {
+          "id": 1,
+        },
+      }
+    }
+    history={
+      Object {
+        "push": [MockFunction] {
+          "calls": Array [
+            Array [
+              "/",
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+      }
+    }
+    orders={Array []}
+    registerUser={[MockFunction]}
+    success={
+      Object {
+        "status": true,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <div
+          className="error_message"
+        />,
+        <div>
+          <form
+            onSubmit={[Function]}
+          >
+            <ul
+              className="form-group"
+            >
+              <li>
+                <label>
+                  Full Name
+                   
+                  <span
+                    className="required"
+                  >
+                    *
+                  </span>
+                </label>
+                <input
+                  className="form-control field-divided"
+                  name="firstname"
+                  onChange={[Function]}
+                  placeholder="First Name"
+                  type="text"
+                  value=""
+                />
+                 
+                <input
+                  className="form-control field-divided"
+                  name="lastname"
+                  onChange={[Function]}
+                  placeholder="Last Name"
+                  type="text"
+                  value=""
+                />
+              </li>
+              <li>
+                <label>
+                  Email
+                   
+                  <span
+                    className="required"
+                  >
+                    *
+                  </span>
+                </label>
+                <input
+                  className="form-control field-long"
+                  name="email"
+                  onChange={[Function]}
+                  required={true}
+                  type="email"
+                  value=""
+                />
+              </li>
+              <li>
+                <label>
+                  Phone
+                   
+                  <span
+                    className="required"
+                  >
+                    *
+                  </span>
+                </label>
+                <input
+                  className="form-control field-long"
+                  name="phone"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                />
+              </li>
+              <li>
+                <label>
+                  City
+                   
+                  <span
+                    className="required"
+                  >
+                    *
+                  </span>
+                </label>
+                <input
+                  className="form-control field-long"
+                  name="city"
+                  onChange={[Function]}
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </li>
+              <li>
+                <label>
+                  Zip Code
+                   
+                  <span
+                    className="required"
+                  >
+                    *
+                  </span>
+                </label>
+                <input
+                  className="form-control field-long"
+                  name="zipcode"
+                  onChange={[Function]}
+                  required={true}
+                  type="number"
+                  value=""
+                />
+              </li>
+              <li>
+                <label>
+                  Address
+                   
+                  <span
+                    className="required"
+                  >
+                    *
+                  </span>
+                </label>
+                <textarea
+                  className="field-long field-textarea"
+                  id="address"
+                  name="address"
+                  onChange={[Function]}
+                  required="required"
+                  rows="3"
+                  value=""
+                />
+              </li>
+              <li>
+                <label>
+                  Password
+                   
+                  <span
+                    className="required"
+                  >
+                    *
+                  </span>
+                </label>
+                <input
+                  className="form-control field-long"
+                  name="password"
+                  onChange={[Function]}
+                  required={true}
+                  type="password"
+                  value=""
+                />
+              </li>
+              <li>
+                <input
+                  type="submit"
+                  value="Submit"
+                />
+              </li>
+            </ul>
+          </form>
+          <div
+            className="text-form"
+          >
+            <p>
+              Already have an account?
+               
+              <a
+                href="signin.html"
+              >
+                Login
+              </a>
+            </p>
+          </div>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "error_message",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <form
+              onSubmit={[Function]}
+            >
+              <ul
+                className="form-group"
+              >
+                <li>
+                  <label>
+                    Full Name
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-divided"
+                    name="firstname"
+                    onChange={[Function]}
+                    placeholder="First Name"
+                    type="text"
+                    value=""
+                  />
+                   
+                  <input
+                    className="form-control field-divided"
+                    name="lastname"
+                    onChange={[Function]}
+                    placeholder="Last Name"
+                    type="text"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Email
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="email"
+                    onChange={[Function]}
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Phone
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="phone"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />
+                </li>
+                <li>
+                  <label>
+                    City
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="city"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Zip Code
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="zipcode"
+                    onChange={[Function]}
+                    required={true}
+                    type="number"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Address
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <textarea
+                    className="field-long field-textarea"
+                    id="address"
+                    name="address"
+                    onChange={[Function]}
+                    required="required"
+                    rows="3"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Password
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="password"
+                    onChange={[Function]}
+                    required={true}
+                    type="password"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <input
+                    type="submit"
+                    value="Submit"
+                  />
+                </li>
+              </ul>
+            </form>,
+            <div
+              className="text-form"
+            >
+              <p>
+                Already have an account?
+                 
+                <a
+                  href="signin.html"
+                >
+                  Login
+                </a>
+              </p>
+            </div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className="form-group"
+              >
+                <li>
+                  <label>
+                    Full Name
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-divided"
+                    name="firstname"
+                    onChange={[Function]}
+                    placeholder="First Name"
+                    type="text"
+                    value=""
+                  />
+                   
+                  <input
+                    className="form-control field-divided"
+                    name="lastname"
+                    onChange={[Function]}
+                    placeholder="Last Name"
+                    type="text"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Email
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="email"
+                    onChange={[Function]}
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Phone
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="phone"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />
+                </li>
+                <li>
+                  <label>
+                    City
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="city"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Zip Code
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="zipcode"
+                    onChange={[Function]}
+                    required={true}
+                    type="number"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Address
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <textarea
+                    className="field-long field-textarea"
+                    id="address"
+                    name="address"
+                    onChange={[Function]}
+                    required="required"
+                    rows="3"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Password
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="password"
+                    onChange={[Function]}
+                    required={true}
+                    type="password"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <input
+                    type="submit"
+                    value="Submit"
+                  />
+                </li>
+              </ul>,
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    <label>
+                      Full Name
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-divided"
+                      name="firstname"
+                      onChange={[Function]}
+                      placeholder="First Name"
+                      type="text"
+                      value=""
+                    />
+                     
+                    <input
+                      className="form-control field-divided"
+                      name="lastname"
+                      onChange={[Function]}
+                      placeholder="Last Name"
+                      type="text"
+                      value=""
+                    />
+                  </li>,
+                  <li>
+                    <label>
+                      Email
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="email"
+                      onChange={[Function]}
+                      required={true}
+                      type="email"
+                      value=""
+                    />
+                  </li>,
+                  <li>
+                    <label>
+                      Phone
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="phone"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                    />
+                  </li>,
+                  <li>
+                    <label>
+                      City
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="city"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </li>,
+                  <li>
+                    <label>
+                      Zip Code
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="zipcode"
+                      onChange={[Function]}
+                      required={true}
+                      type="number"
+                      value=""
+                    />
+                  </li>,
+                  <li>
+                    <label>
+                      Address
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <textarea
+                      className="field-long field-textarea"
+                      id="address"
+                      name="address"
+                      onChange={[Function]}
+                      required="required"
+                      rows="3"
+                      value=""
+                    />
+                  </li>,
+                  <li>
+                    <label>
+                      Password
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="password"
+                      onChange={[Function]}
+                      required={true}
+                      type="password"
+                      value=""
+                    />
+                  </li>,
+                  <li>
+                    <input
+                      type="submit"
+                      value="Submit"
+                    />
+                  </li>,
+                ],
+                "className": "form-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Full Name
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>,
+                      <input
+                        className="form-control field-divided"
+                        name="firstname"
+                        onChange={[Function]}
+                        placeholder="First Name"
+                        type="text"
+                        value=""
+                      />,
+                      " ",
+                      <input
+                        className="form-control field-divided"
+                        name="lastname"
+                        onChange={[Function]}
+                        placeholder="Last Name"
+                        type="text"
+                        value=""
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Full Name",
+                          " ",
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Full Name",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "required",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-control field-divided",
+                        "name": "firstname",
+                        "onChange": [Function],
+                        "placeholder": "First Name",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    " ",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-control field-divided",
+                        "name": "lastname",
+                        "onChange": [Function],
+                        "placeholder": "Last Name",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Email
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>,
+                      <input
+                        className="form-control field-long"
+                        name="email"
+                        onChange={[Function]}
+                        required={true}
+                        type="email"
+                        value=""
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Email",
+                          " ",
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Email",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "required",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-control field-long",
+                        "name": "email",
+                        "onChange": [Function],
+                        "required": true,
+                        "type": "email",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Phone
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>,
+                      <input
+                        className="form-control field-long"
+                        name="phone"
+                        onChange={[Function]}
+                        required={true}
+                        type="text"
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Phone",
+                          " ",
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Phone",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "required",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-control field-long",
+                        "name": "phone",
+                        "onChange": [Function],
+                        "required": true,
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        City
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>,
+                      <input
+                        className="form-control field-long"
+                        name="city"
+                        onChange={[Function]}
+                        required={true}
+                        type="text"
+                        value=""
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "City",
+                          " ",
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "City",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "required",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-control field-long",
+                        "name": "city",
+                        "onChange": [Function],
+                        "required": true,
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Zip Code
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>,
+                      <input
+                        className="form-control field-long"
+                        name="zipcode"
+                        onChange={[Function]}
+                        required={true}
+                        type="number"
+                        value=""
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Zip Code",
+                          " ",
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Zip Code",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "required",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-control field-long",
+                        "name": "zipcode",
+                        "onChange": [Function],
+                        "required": true,
+                        "type": "number",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Address
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>,
+                      <textarea
+                        className="field-long field-textarea"
+                        id="address"
+                        name="address"
+                        onChange={[Function]}
+                        required="required"
+                        rows="3"
+                        value=""
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Address",
+                          " ",
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Address",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "required",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "field-long field-textarea",
+                        "id": "address",
+                        "name": "address",
+                        "onChange": [Function],
+                        "required": "required",
+                        "rows": "3",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "textarea",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label>
+                        Password
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>,
+                      <input
+                        className="form-control field-long"
+                        name="password"
+                        onChange={[Function]}
+                        required={true}
+                        type="password"
+                        value=""
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "Password",
+                          " ",
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>,
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Password",
+                        " ",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "*",
+                            "className": "required",
+                          },
+                          "ref": null,
+                          "rendered": "*",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "form-control field-long",
+                        "name": "password",
+                        "onChange": [Function],
+                        "required": true,
+                        "type": "password",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <input
+                      type="submit"
+                      value="Submit"
+                    />,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "type": "submit",
+                      "value": "Submit",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "form",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <p>
+                Already have an account?
+                 
+                <a
+                  href="signin.html"
+                >
+                  Login
+                </a>
+              </p>,
+              "className": "text-form",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Already have an account?",
+                  " ",
+                  <a
+                    href="signin.html"
+                  >
+                    Login
+                  </a>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Already have an account?",
+                " ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Login",
+                    "href": "signin.html",
+                  },
+                  "ref": null,
+                  "rendered": "Login",
+                  "type": "a",
+                },
+              ],
+              "type": "p",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <div
+            className="error_message"
+          />,
+          <div>
+            <form
+              onSubmit={[Function]}
+            >
+              <ul
+                className="form-group"
+              >
+                <li>
+                  <label>
+                    Full Name
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-divided"
+                    name="firstname"
+                    onChange={[Function]}
+                    placeholder="First Name"
+                    type="text"
+                    value=""
+                  />
+                   
+                  <input
+                    className="form-control field-divided"
+                    name="lastname"
+                    onChange={[Function]}
+                    placeholder="Last Name"
+                    type="text"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Email
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="email"
+                    onChange={[Function]}
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Phone
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="phone"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                  />
+                </li>
+                <li>
+                  <label>
+                    City
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="city"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Zip Code
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="zipcode"
+                    onChange={[Function]}
+                    required={true}
+                    type="number"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Address
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <textarea
+                    className="field-long field-textarea"
+                    id="address"
+                    name="address"
+                    onChange={[Function]}
+                    required="required"
+                    rows="3"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <label>
+                    Password
+                     
+                    <span
+                      className="required"
+                    >
+                      *
+                    </span>
+                  </label>
+                  <input
+                    className="form-control field-long"
+                    name="password"
+                    onChange={[Function]}
+                    required={true}
+                    type="password"
+                    value=""
+                  />
+                </li>
+                <li>
+                  <input
+                    type="submit"
+                    value="Submit"
+                  />
+                </li>
+              </ul>
+            </form>
+            <div
+              className="text-form"
+            >
+              <p>
+                Already have an account?
+                 
+                <a
+                  href="signin.html"
+                >
+                  Login
+                </a>
+              </p>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "error_message",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <form
+                onSubmit={[Function]}
+              >
+                <ul
+                  className="form-group"
+                >
+                  <li>
+                    <label>
+                      Full Name
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-divided"
+                      name="firstname"
+                      onChange={[Function]}
+                      placeholder="First Name"
+                      type="text"
+                      value=""
+                    />
+                     
+                    <input
+                      className="form-control field-divided"
+                      name="lastname"
+                      onChange={[Function]}
+                      placeholder="Last Name"
+                      type="text"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Email
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="email"
+                      onChange={[Function]}
+                      required={true}
+                      type="email"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Phone
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="phone"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      City
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="city"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Zip Code
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="zipcode"
+                      onChange={[Function]}
+                      required={true}
+                      type="number"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Address
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <textarea
+                      className="field-long field-textarea"
+                      id="address"
+                      name="address"
+                      onChange={[Function]}
+                      required="required"
+                      rows="3"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Password
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="password"
+                      onChange={[Function]}
+                      required={true}
+                      type="password"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="submit"
+                      value="Submit"
+                    />
+                  </li>
+                </ul>
+              </form>,
+              <div
+                className="text-form"
+              >
+                <p>
+                  Already have an account?
+                   
+                  <a
+                    href="signin.html"
+                  >
+                    Login
+                  </a>
+                </p>
+              </div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ul
+                  className="form-group"
+                >
+                  <li>
+                    <label>
+                      Full Name
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-divided"
+                      name="firstname"
+                      onChange={[Function]}
+                      placeholder="First Name"
+                      type="text"
+                      value=""
+                    />
+                     
+                    <input
+                      className="form-control field-divided"
+                      name="lastname"
+                      onChange={[Function]}
+                      placeholder="Last Name"
+                      type="text"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Email
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="email"
+                      onChange={[Function]}
+                      required={true}
+                      type="email"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Phone
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="phone"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      City
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="city"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Zip Code
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="zipcode"
+                      onChange={[Function]}
+                      required={true}
+                      type="number"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Address
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <textarea
+                      className="field-long field-textarea"
+                      id="address"
+                      name="address"
+                      onChange={[Function]}
+                      required="required"
+                      rows="3"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <label>
+                      Password
+                       
+                      <span
+                        className="required"
+                      >
+                        *
+                      </span>
+                    </label>
+                    <input
+                      className="form-control field-long"
+                      name="password"
+                      onChange={[Function]}
+                      required={true}
+                      type="password"
+                      value=""
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="submit"
+                      value="Submit"
+                    />
+                  </li>
+                </ul>,
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li>
+                      <label>
+                        Full Name
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>
+                      <input
+                        className="form-control field-divided"
+                        name="firstname"
+                        onChange={[Function]}
+                        placeholder="First Name"
+                        type="text"
+                        value=""
+                      />
+                       
+                      <input
+                        className="form-control field-divided"
+                        name="lastname"
+                        onChange={[Function]}
+                        placeholder="Last Name"
+                        type="text"
+                        value=""
+                      />
+                    </li>,
+                    <li>
+                      <label>
+                        Email
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>
+                      <input
+                        className="form-control field-long"
+                        name="email"
+                        onChange={[Function]}
+                        required={true}
+                        type="email"
+                        value=""
+                      />
+                    </li>,
+                    <li>
+                      <label>
+                        Phone
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>
+                      <input
+                        className="form-control field-long"
+                        name="phone"
+                        onChange={[Function]}
+                        required={true}
+                        type="text"
+                      />
+                    </li>,
+                    <li>
+                      <label>
+                        City
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>
+                      <input
+                        className="form-control field-long"
+                        name="city"
+                        onChange={[Function]}
+                        required={true}
+                        type="text"
+                        value=""
+                      />
+                    </li>,
+                    <li>
+                      <label>
+                        Zip Code
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>
+                      <input
+                        className="form-control field-long"
+                        name="zipcode"
+                        onChange={[Function]}
+                        required={true}
+                        type="number"
+                        value=""
+                      />
+                    </li>,
+                    <li>
+                      <label>
+                        Address
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>
+                      <textarea
+                        className="field-long field-textarea"
+                        id="address"
+                        name="address"
+                        onChange={[Function]}
+                        required="required"
+                        rows="3"
+                        value=""
+                      />
+                    </li>,
+                    <li>
+                      <label>
+                        Password
+                         
+                        <span
+                          className="required"
+                        >
+                          *
+                        </span>
+                      </label>
+                      <input
+                        className="form-control field-long"
+                        name="password"
+                        onChange={[Function]}
+                        required={true}
+                        type="password"
+                        value=""
+                      />
+                    </li>,
+                    <li>
+                      <input
+                        type="submit"
+                        value="Submit"
+                      />
+                    </li>,
+                  ],
+                  "className": "form-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Full Name
+                           
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>
+                        </label>,
+                        <input
+                          className="form-control field-divided"
+                          name="firstname"
+                          onChange={[Function]}
+                          placeholder="First Name"
+                          type="text"
+                          value=""
+                        />,
+                        " ",
+                        <input
+                          className="form-control field-divided"
+                          name="lastname"
+                          onChange={[Function]}
+                          placeholder="Last Name"
+                          type="text"
+                          value=""
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Full Name",
+                            " ",
+                            <span
+                              className="required"
+                            >
+                              *
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Full Name",
+                          " ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "required",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-control field-divided",
+                          "name": "firstname",
+                          "onChange": [Function],
+                          "placeholder": "First Name",
+                          "type": "text",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                      " ",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-control field-divided",
+                          "name": "lastname",
+                          "onChange": [Function],
+                          "placeholder": "Last Name",
+                          "type": "text",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Email
+                           
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>
+                        </label>,
+                        <input
+                          className="form-control field-long"
+                          name="email"
+                          onChange={[Function]}
+                          required={true}
+                          type="email"
+                          value=""
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Email",
+                            " ",
+                            <span
+                              className="required"
+                            >
+                              *
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Email",
+                          " ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "required",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-control field-long",
+                          "name": "email",
+                          "onChange": [Function],
+                          "required": true,
+                          "type": "email",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Phone
+                           
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>
+                        </label>,
+                        <input
+                          className="form-control field-long"
+                          name="phone"
+                          onChange={[Function]}
+                          required={true}
+                          type="text"
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Phone",
+                            " ",
+                            <span
+                              className="required"
+                            >
+                              *
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Phone",
+                          " ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "required",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-control field-long",
+                          "name": "phone",
+                          "onChange": [Function],
+                          "required": true,
+                          "type": "text",
+                          "value": undefined,
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          City
+                           
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>
+                        </label>,
+                        <input
+                          className="form-control field-long"
+                          name="city"
+                          onChange={[Function]}
+                          required={true}
+                          type="text"
+                          value=""
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "City",
+                            " ",
+                            <span
+                              className="required"
+                            >
+                              *
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "City",
+                          " ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "required",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-control field-long",
+                          "name": "city",
+                          "onChange": [Function],
+                          "required": true,
+                          "type": "text",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Zip Code
+                           
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>
+                        </label>,
+                        <input
+                          className="form-control field-long"
+                          name="zipcode"
+                          onChange={[Function]}
+                          required={true}
+                          type="number"
+                          value=""
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Zip Code",
+                            " ",
+                            <span
+                              className="required"
+                            >
+                              *
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Zip Code",
+                          " ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "required",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-control field-long",
+                          "name": "zipcode",
+                          "onChange": [Function],
+                          "required": true,
+                          "type": "number",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Address
+                           
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>
+                        </label>,
+                        <textarea
+                          className="field-long field-textarea"
+                          id="address"
+                          name="address"
+                          onChange={[Function]}
+                          required="required"
+                          rows="3"
+                          value=""
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Address",
+                            " ",
+                            <span
+                              className="required"
+                            >
+                              *
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Address",
+                          " ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "required",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "field-long field-textarea",
+                          "id": "address",
+                          "name": "address",
+                          "onChange": [Function],
+                          "required": "required",
+                          "rows": "3",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "textarea",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <label>
+                          Password
+                           
+                          <span
+                            className="required"
+                          >
+                            *
+                          </span>
+                        </label>,
+                        <input
+                          className="form-control field-long"
+                          name="password"
+                          onChange={[Function]}
+                          required={true}
+                          type="password"
+                          value=""
+                        />,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            "Password",
+                            " ",
+                            <span
+                              className="required"
+                            >
+                              *
+                            </span>,
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Password",
+                          " ",
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "*",
+                              "className": "required",
+                            },
+                            "ref": null,
+                            "rendered": "*",
+                            "type": "span",
+                          },
+                        ],
+                        "type": "label",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "className": "form-control field-long",
+                          "name": "password",
+                          "onChange": [Function],
+                          "required": true,
+                          "type": "password",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "input",
+                      },
+                    ],
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <input
+                        type="submit"
+                        value="Submit"
+                      />,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "type": "submit",
+                        "value": "Submit",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              "type": "form",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <p>
+                  Already have an account?
+                   
+                  <a
+                    href="signin.html"
+                  >
+                    Login
+                  </a>
+                </p>,
+                "className": "text-form",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Already have an account?",
+                    " ",
+                    <a
+                      href="signin.html"
+                    >
+                      Login
+                    </a>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Already have an account?",
+                  " ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Login",
+                      "href": "signin.html",
+                    },
+                    "ref": null,
+                    "rendered": "Login",
+                    "type": "a",
+                  },
+                ],
+                "type": "p",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

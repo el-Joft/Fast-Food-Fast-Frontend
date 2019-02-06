@@ -7,7 +7,6 @@ import {
   CHECKOUT_ORDER,
   EMPTY_CART,
   GET_ORDERS,
-  DELETE_ORDER,
   GET_SUCCESS,
 } from './types';
 
@@ -22,14 +21,14 @@ export const addCart = payload => (dispatch) => {
   const cartItems = JSON.stringify(cartArray);
   localStorage.setItem('cart', cartItems);
 
-  dispatch({
+  return dispatch({
     type: ADD_TO_CART,
     cartArray,
   });
 };
 
 export const changeQuantity = (id, quantity) => (dispatch) => {
-  dispatch({
+  return dispatch({
     type: CHANGE_QUANTITY,
     payload: { id, quantity },
   });
@@ -44,7 +43,7 @@ export const emptyCart = (payload) => {
 };
 
 export const checkoutOrder = (value, token, history) => (dispatch) => {
-  axios({
+  return axios({
     method: 'post',
     url: 'https://fffastapp.herokuapp.com/api/v1/orders',
     data: value,
@@ -68,7 +67,7 @@ export const checkoutOrder = (value, token, history) => (dispatch) => {
 };
 
 export const getOrders = (token, id) => (dispatch) => {
-  axios({
+  return axios({
     method: 'get',
     url: `http://fffastapp.herokuapp.com/api/v1/users/${id}/orders`,
     headers: {
@@ -89,7 +88,7 @@ export const getOrders = (token, id) => (dispatch) => {
 };
 
 export const getAdminOrders = token => (dispatch) => {
-  axios({
+  return axios({
     method: 'get',
     url: 'http://fffastapp.herokuapp.com/api/v1/orders',
     headers: {
@@ -109,8 +108,8 @@ export const getAdminOrders = token => (dispatch) => {
     }));
 };
 
-export const deleteAnOrder = (id, token, history) => (dispatch) => {
-  axios({
+export const deleteAnOrder = (id, token) => (dispatch) => {
+  return axios({
     method: 'delete',
     url: `http://fffastapp.herokuapp.com/api/v1/orders/${id}`,
     headers: {

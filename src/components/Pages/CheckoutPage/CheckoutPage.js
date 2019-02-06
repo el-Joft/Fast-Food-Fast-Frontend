@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { changeQuantity, checkoutOrder } from '../../../actions/orderAction';
 
 
-class CheckoutPage extends Component {
+export class CheckoutPage extends Component {
   componentDidMount() {
     const { isAuthenticated } = this.props.auth;
     if (!isAuthenticated) {
@@ -134,6 +134,8 @@ CheckoutPage.propTypes = {
   auth: PropTypes.object.isRequired,
   cart: PropTypes.object.isRequired,
   checkoutOrder: PropTypes.func.isRequired,
+  changeQuantity: PropTypes.func.isRequired,
+  history: PropTypes.string.isRequired,
 };
 
 

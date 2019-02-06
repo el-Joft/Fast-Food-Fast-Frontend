@@ -1,5 +1,4 @@
 const path = require('path');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -35,7 +34,8 @@ module.exports = {
   module: {
     rules: [
       {
-        // test if a certain file fulfil a certain criteria which is the file name/ extension checked with a regular expression
+        // test if a certain file fulfil a certain criteria which is the file name/ 
+        // extension checked with a regular expression
         test: /\.js$/,
         // if the above condition is meant then run the loader which is babel
         loader: 'babel-loader',

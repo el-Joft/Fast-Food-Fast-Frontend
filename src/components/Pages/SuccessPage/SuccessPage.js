@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SuccessPage = () => (
+export const SuccessPage = () => (
   <section>
     <div className="successful">
       <div>

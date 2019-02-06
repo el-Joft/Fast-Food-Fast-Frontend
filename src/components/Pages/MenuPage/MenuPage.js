@@ -1,7 +1,8 @@
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import Card from '../../UI/Card/Card';
 
-const MenuPage = () => (
+export const MenuPage = () => (
   <div>
     <section className="container">
       <div className="menu-banner">
