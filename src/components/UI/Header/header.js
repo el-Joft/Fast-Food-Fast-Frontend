@@ -49,7 +49,7 @@ const Header = () => {
     },
     {
       link: '/google',
-      src: { google },
+      src: google,
       alt: 'google',
     },
   ];

@@ -45,7 +45,7 @@ export const emptyCart = (payload) => {
 export const checkoutOrder = (value, token, history) => (dispatch) => {
   return axios({
     method: 'post',
-    url: 'https://fffastapp.herokuapp.com/api/v1/orders',
+    url: 'http://fffastapp.herokuapp.com/api/v1/orders',
     data: value,
     headers: {
       'Content-Type': 'application/json',

@@ -103,11 +103,7 @@ exports[`shallow testing testing the header with snapshots 1`] = `
           >
             <img
               alt="item.alt"
-              src={
-                Object {
-                  "google": Object {},
-                }
-              }
+              src={Object {}}
             />
           </Link>
         </li>
