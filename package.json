@@ -7,7 +7,7 @@
     "test": "jest --config=jest.config.json --updateSnapshot",
     "coverage": "npm test -- --coverage",
     "lint:fix": "eslint --fix ./ --ext .js --color",
-    "coveralls:coverage": "npm run coverage | coveralls",
+    "coveralls:coverage": "npm run coverage && cat ./coverage/lcov.info | coveralls",
     "start": "npm run build && node index.js",
     "postinstall": "npm run build",
     "start:dev": "webpack-dev-server --mode development --open --hot",
