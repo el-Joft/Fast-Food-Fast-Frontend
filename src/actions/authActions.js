@@ -11,11 +11,10 @@ export const setCurrentUser = decoded => ({
   payload: decoded,
 });
 
-
 // REGISTEER USER
 // here we dispatch something to our reducer
 export const registerUser = userData => (dispatch) => {
-  return axios.post('http://fffastapp.herokuapp.com/api/v1/auth/signup', userData)
+  return axios.post('https://fffastapp.herokuapp.com/api/v1/auth/signup', userData)
     .then((res) => {
       // save token to local storage
       const { token } = res.data;
@@ -36,7 +35,7 @@ export const registerUser = userData => (dispatch) => {
 };
 
 export const loginUser = loginDetails => (dispatch) => {
-  return axios.post('http://fffastapp.herokuapp.com/api/v1/auth/login', loginDetails)
+  return axios.post('https://fffastapp.herokuapp.com/api/v1/auth/login', loginDetails)
     .then((res) => {
       // save token to local storage
       const { token } = res.data;

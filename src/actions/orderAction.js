@@ -111,7 +111,7 @@ export const getAdminOrders = token => (dispatch) => {
 export const deleteAnOrder = (id, token) => (dispatch) => {
   return axios({
     method: 'delete',
-    url: `http://fffastapp.herokuapp.com/api/v1/orders/${id}`,
+    url: `https://fffastapp.herokuapp.com/api/v1/orders/${id}`,
     headers: {
       'Content-Type': 'application/json',
       token,

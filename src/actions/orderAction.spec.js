@@ -37,7 +37,7 @@ describe('Get Menu', () => {
 
     const token = 'teferffaadsf909099099';
     const { orderedBy, menuId, quantity } = value;
-    moxios.stubRequest('http://fffastapp.herokuapp.com/api/v1/orders', { quantity, orderedBy, menuId });
+    moxios.stubRequest('https://fffastapp.herokuapp.com/api/v1/orders', { quantity, orderedBy, menuId });
 
     store.dispatch(checkoutOrder(value, token)).then(() => {
       expect(store.getActions()).toEqual(expectedResult);
@@ -54,7 +54,7 @@ describe('Get Menu', () => {
 
     const token = 'teferffaadsf909099099';
     const id = 1;
-    moxios.stubRequest(`http://fffastapp.herokuapp.com/api/v1/users/${id}/orders`);
+    moxios.stubRequest(`https://fffastapp.herokuapp.com/api/v1/users/${id}/orders`);
 
     store.dispatch(getOrders(id, token)).then(() => {
       expect(store.getActions()).toEqual(expectedResult);
@@ -86,7 +86,7 @@ describe('Get Menu', () => {
     ];
 
     const token = 'teferffaadsf909099099';
-    moxios.stubRequest('http://fffastapp.herokuapp.com/api/v1/orders');
+    moxios.stubRequest('https://fffastapp.herokuapp.com/api/v1/orders');
 
     store.dispatch(getAdminOrders(token)).then(() => {
       expect(store.getActions()).toEqual(expectedResult);
@@ -102,7 +102,7 @@ describe('Get Menu', () => {
     ];
     const id = 1;
     const token = 'teferffaadsf909099099';
-    moxios.stubRequest(`http://fffastapp.herokuapp.com/api/v1/orders/${id}`);
+    moxios.stubRequest(`https://fffastapp.herokuapp.com/api/v1/orders/${id}`);
 
     store.dispatch(getAdminOrders(token)).then(() => {
       expect(store.getActions()).toEqual(expectedResult);

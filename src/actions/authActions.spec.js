@@ -21,7 +21,7 @@ describe('Auth Action', () => {
     password: '123456',
   };
   it('creates SET_CURRENT_USER when login action is succesful', (done) => {
-    moxios.stubRequest('http://fffastapp.herokuapp.com/api/v1/auth/login', {
+    moxios.stubRequest('https://fffastapp.herokuapp.com/api/v1/auth/login', {
       status: 200,
       response: {
         data: mockData.users,
@@ -41,7 +41,7 @@ describe('Auth Action', () => {
   });
 
   it('creates SET_CURRENT_USER when registers action is succesful', (done) => {
-    moxios.stubRequest('http://fffastapp.herokuapp.com/api/v1/auth/signup', {
+    moxios.stubRequest('https://fffastapp.herokuapp.com/api/v1/auth/signup', {
       status: 200,
       response: {
         data: mockData.users,
