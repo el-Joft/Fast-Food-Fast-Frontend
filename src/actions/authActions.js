@@ -11,7 +11,6 @@ export const setCurrentUser = decoded => ({
   payload: decoded,
 });
 
-
 // REGISTEER USER
 // here we dispatch something to our reducer
 export const registerUser = userData => (dispatch) => {
