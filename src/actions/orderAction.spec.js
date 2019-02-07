@@ -37,7 +37,7 @@ describe('Get Menu', () => {
 
     const token = 'teferffaadsf909099099';
     const { orderedBy, menuId, quantity } = value;
-    moxios.stubRequest('https://fffastapp.herokuapp.com/api/v1/orders', { quantity, orderedBy, menuId });
+    moxios.stubRequest('http://fffastapp.herokuapp.com/api/v1/orders', { quantity, orderedBy, menuId });
 
     store.dispatch(checkoutOrder(value, token)).then(() => {
       expect(store.getActions()).toEqual(expectedResult);
