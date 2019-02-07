@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
+import telephone from '../../../public/images/icons/telephone.png';
+import logoIcon from '../../../public/images/fast-food-fast.png';
 import './header.scss';
 
 const Header = () => {
   const logo = () => (
     <div className='logo'>
       <Link to='/'>
-        <img src='/src/public/images/fast-food-fast.png' alt="" />
+        <img src={logoIcon} alt="" />
         <div className='logo-text'><h2>Fast Food Fast</h2></div>
       </Link>
     </div>
@@ -15,7 +17,7 @@ const Header = () => {
 
   const workingHours = () => (
     <div className="working-hours">
-      <img className="icons-telephone" src="/src/public/images/icons/telephone.png" alt="" />
+      <img className="icons-telephone" src={telephone} alt="" />
       <address className="contact-info">
         <Link to='callto:#' className="phone">+234-80502000</Link>
         <br />
