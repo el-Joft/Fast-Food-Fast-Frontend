@@ -1,8 +1,13 @@
+/* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import telephone from '../../../public/images/icons/telephone.png';
 import logoIcon from '../../../public/images/fast-food-fast.png';
+import facebook from '../../../public/images/icons/facebook.png';
+import twitter from '../../../public/images/icons/twitter.png';
+import instagram from '../../../public/images/icons/instagram.png';
+import google from '../../../public/images/icons/google.png';
 import './header.scss';
 
 const Header = () => {
@@ -29,22 +34,22 @@ const Header = () => {
   const socialItem = [
     {
       link: '/facebook',
-      src: '/public/images/icons/facebook.png',
+      src: facebook,
       alt: 'facebook',
     },
     {
       link: '/twitter',
-      src: '/public/images/icons/twitter.png',
+      src: twitter,
       alt: 'twitter',
     },
     {
       link: '/instagram',
-      src: '/public/images/icons/instagram.png',
+      src: instagram,
       alt: 'instagram',
     },
     {
       link: '/google',
-      src: '/public/images/icons/google.png',
+      src: { google },
       alt: 'google',
     },
   ];

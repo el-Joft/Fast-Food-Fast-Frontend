@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import './NavItems.scss';
 import { logoutUser } from '../../actions/authActions';
 import { addCart } from '../../actions/orderAction';
+import cartLogo from '../../public/images/icons/cart.png';
 
 export const NavItem = (props) => {
   const { isAuthenticated, user } = props.auth;
@@ -100,7 +101,7 @@ export const NavItem = (props) => {
           }
           <li className="cart-section">
             <Link to="/checkout">
-              <img src="/src/public/images/icons/cart.png" alt="" />
+              <img src={cartLogo} alt="" />
               <span>
 Cart(
                 {cart()}
