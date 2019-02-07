@@ -12,7 +12,7 @@ describe('Get Menu', () => {
   afterEach(() => moxios.uninstall());
 
   it('test menu actions succesfully', (done) => {
-    moxios.stubRequest('http://fffastapp.herokuapp.com/api/v1/menus', {
+    moxios.stubRequest('https://fffastapp.herokuapp.com/api/v1/menus', {
       status: 200,
     });
     const expectedResult = [
