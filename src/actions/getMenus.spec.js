@@ -24,4 +24,16 @@ describe('Get Menu', () => {
       });
     done();
   });
+
+  // it('test menu actions succesfully', (done) => {
+    
+  //   const expectedResult = [
+  //     { type: 'LOADING' },
+  //   ];
+  //   store.dispatch(setMe())
+  //     .then(() => {
+  //       expect(store.getActions()).toEqual(expectedResult);
+  //     });
+  //   done();
+  // });
 });
