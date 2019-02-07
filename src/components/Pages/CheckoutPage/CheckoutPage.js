@@ -62,6 +62,7 @@ export class CheckoutPage extends Component {
       <div className="top-header checkout-quantity">
         <h3>Quantity</h3>
         <input
+          name='quantity'
           type="number"
           min="1"
           max="100"

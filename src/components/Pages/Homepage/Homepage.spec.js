@@ -17,6 +17,11 @@ describe('rendering', () => {
 
   it('should render the component', () => {
     wrapper = shallow(<Homepage />);
+    expect(wrapper.find('section').length).toEqual(2);
+  });
+
+  it('should render the component', () => {
+    wrapper = shallow(<Homepage />);
     expect(wrapper).toMatchSnapshot();
   });
 });

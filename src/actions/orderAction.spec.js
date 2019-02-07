@@ -2,7 +2,7 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import moxios from 'moxios';
 import {
-  addCart, checkoutOrder, getOrders, getAdminOrders,
+  addCart, checkoutOrder, getOrders, getAdminOrders, changeQuantity,
 } from './orderAction';
 import mockData from '../__mocks__/menusMock';
 
@@ -60,6 +60,22 @@ describe('Get Menu', () => {
       expect(store.getActions()).toEqual(expectedResult);
     });
   });
+
+  // it('should change quantity', () => {
+  //   const id = 1;
+  //   const quantity = 2;
+  //   const expectedResult = [
+  //     {
+  //       payload: { id, quantity },
+  //       type: 'CHANGE_QUANTITY',
+  //     },
+  //   ];
+
+  //   store.dispatch(changeQuantity(id, quantity)).then(() => {
+  //     expect(store.getActions()).toEqual(expectedResult);
+  //   });
+  //   expect(store.getActions()).toEqual(expectedResult);
+  // });
 
   it('should get admin order', () => {
     const expectedResult = [
