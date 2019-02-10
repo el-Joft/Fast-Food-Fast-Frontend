@@ -20,11 +20,12 @@ exports[`rendering should render the component 1`] = `
       <p>
         You can check your
          
-        <a
-          href="user-dashboard.html"
+        <Link
+          replace={false}
+          to="/dashboard"
         >
           dashboard
-        </a>
+        </Link>
       </p>
     </div>
   </div>

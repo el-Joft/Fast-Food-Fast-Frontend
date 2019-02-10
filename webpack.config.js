@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
+require('dotenv').config();
 
 
 const miniCssPlugin = new MiniCssExtractPlugin({
@@ -54,6 +56,13 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.BASE_URL_PROD': JSON.stringify(process.env.BASE_URL_PROD),
+      'process.env.CLOUDINARY_URL': JSON.stringify(process.env.CLOUDINARY_URL),
+      'process.env.CLOUDINARY_UPLOAD_PRESET': JSON.stringify(
+        process.env.CLOUDINARY_UPLOAD_PRESET,
+      ),
+    }),
     miniCssPlugin,
     new HtmlWebpackPlugin({
       template: `${__dirname}/src/index.html`,

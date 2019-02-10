@@ -8,12 +8,24 @@ import './Frame.scss';
 import './responsive.scss';
 
 class Frame extends Component {
-  state = {}
+  state = {
+    showNav: false,
+  }
+
+  toggleSideNav = (action) => {
+    this.setState({
+      showNav: action,
+    });
+  }
 
   render() {
     return (
       <div>
-        <Header />
+        <Header
+          showNav={this.state.showNav}
+          onHideNav={() => this.toggleSideNav(false)}
+          onShowNav={() => this.toggleSideNav(true)}
+        />
         {this.props.children}
         <Footer />
       </div>

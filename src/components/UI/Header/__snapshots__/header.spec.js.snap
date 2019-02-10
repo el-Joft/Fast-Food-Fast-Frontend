@@ -110,6 +110,26 @@ exports[`shallow testing testing the header with snapshots 1`] = `
       </ul>
     </div>
   </div>
-  <Navbar />
+  <div>
+    <Navbar />
+    <div>
+      <div
+        className="bars"
+      >
+        <FontAwesome
+          name="bars"
+          style={
+            Object {
+              "color": "#ffff",
+              "cursor": "pointer",
+              "marginLeft": "10px",
+              "padding": "7px",
+            }
+          }
+        />
+      </div>
+      <SideNavigation />
+    </div>
+  </div>
 </div>
 `;

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow testing should test the component if it renders anything 1`] = `
+<div>
+  <nav>
+    <ul
+      className="nav-bar option"
+    >
+      <li
+        key="0"
+      >
+        <Link
+          replace={false}
+          to="/menu"
+        >
+          Menu
+        </Link>
+      </li>
+      <li
+        key="1"
+      >
+        <Link
+          replace={false}
+          to="/about"
+        >
+          About Us
+        </Link>
+      </li>
+      <li
+        key="2"
+      >
+        <Link
+          replace={false}
+          to="/dashboard"
+        >
+          Welcome
+        </Link>
+      </li>
+      <li>
+        <Link
+          onClick={[Function]}
+          replace={false}
+          to="/logout"
+        >
+          Logout
+        </Link>
+      </li>
+      <li
+        className="cart-section"
+      >
+        <Link
+          replace={false}
+          to="/checkout"
+        >
+          <img
+            alt=""
+            src={Object {}}
+          />
+          <span>
+            Cart(
+            0
+            )
+          </span>
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow testing should test the component if it renders anything 1`] = `
+<div>
+  <e
+    navStyle={
+      Object {
+        "background": "#42ce9f",
+        "maxWidth": "220px",
+      }
+    }
+  >
+    <Connect(SideNavItem) />
+  </e>
+</div>
+`;

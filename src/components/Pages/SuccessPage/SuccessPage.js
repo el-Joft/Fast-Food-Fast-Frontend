@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const SuccessPage = () => (
   <section>
@@ -11,7 +12,7 @@ export const SuccessPage = () => (
         <p>
 You can check your
           {' '}
-          <a href="user-dashboard.html">dashboard</a>
+          <Link to="/dashboard">dashboard</Link>
         </p>
       </div>
     </div>
