@@ -1,6 +1,10 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable import/no-named-as-default */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 import Navbar from '../Navbar/Navbar';
 import telephone from '../../../public/images/icons/telephone.png';
 import logoIcon from '../../../public/images/fast-food-fast.png';
@@ -9,8 +13,10 @@ import twitter from '../../../public/images/icons/twitter.png';
 import instagram from '../../../public/images/icons/instagram.png';
 import google from '../../../public/images/icons/google.png';
 import './header.scss';
+import SideNavigation from '../SideNav/sideNav';
 
-const Header = () => {
+
+const Header = (props) => {
   const logo = () => (
     <div className='logo'>
       <Link to='/'>
@@ -53,6 +59,22 @@ const Header = () => {
       alt: 'google',
     },
   ];
+
+  const navBars = () => (
+    <div className='bars'>
+      <FontAwesome
+        name='bars'
+        onClick={props.onShowNav}
+        style={{
+          color: '#ffff',
+          padding: '7px',
+          cursor: 'pointer',
+          marginLeft: '10px',
+        }}
+      />
+    </div>
+  );
+
   const socialMedia = () => socialItem.map((item, i) => (
     <li key={i}>
       <Link to={item.link}>
@@ -71,7 +93,13 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <Navbar />
+      <div>
+        <Navbar />
+        <div>
+          {navBars()}
+          <SideNavigation {...props} />
+        </div>
+      </div>
     </div>
   );
 };

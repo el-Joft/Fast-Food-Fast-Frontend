@@ -10,7 +10,7 @@ export const setMenuLoading = () => ({
 
 export const getAllMenus = () => (dispatch) => {
   dispatch(setMenuLoading());
-  return axios.get('https://fffastapp.herokuapp.com/api/v1/menus')
+  return axios.get(`${process.env.BASE_URL_PROD}/api/v1/menus`)
     .then(res => dispatch({
       type: GET_ALL_MENUS,
       payload: res.data.result,

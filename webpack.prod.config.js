@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+require('dotenv').config();
 
 
 module.exports = {
@@ -39,6 +40,13 @@ module.exports = {
     ],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.BASE_URL_PROD': JSON.stringify(process.env.BASE_URL_PROD),
+      'process.env.CLOUDINARY_URL': JSON.stringify(process.env.CLOUDINARY_URL),
+      'process.env.CLOUDINARY_UPLOAD_PRESET': JSON.stringify(
+        process.env.CLOUDINARY_UPLOAD_PRESET,
+      ),
+    }),
     new HtmlWebpackPlugin({
       template: `${__dirname}/src/index.html`,
       filename: 'index.html',

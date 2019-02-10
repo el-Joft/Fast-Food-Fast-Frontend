@@ -2,7 +2,11 @@
 
 exports[`shallow testing should test the component if it renders anything 1`] = `
 <div>
-  <Header />
+  <Header
+    onHideNav={[Function]}
+    onShowNav={[Function]}
+    showNav={false}
+  />
   <Footer />
 </div>
 `;

@@ -28,7 +28,7 @@ if (localStorage.userToken) {
     window.location.href = '/login';
   }
 }
-export const App = () => (
+const App = () => (
   <Provider store={store}>
     <BrowserRouter>
       <Route />

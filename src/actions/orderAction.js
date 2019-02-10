@@ -45,7 +45,7 @@ export const emptyCart = (payload) => {
 export const checkoutOrder = (value, token, history) => (dispatch) => {
   return axios({
     method: 'post',
-    url: 'http://fffastapp.herokuapp.com/api/v1/orders',
+    url: `${process.env.BASE_URL_PROD}/api/v1/orders`,
     data: value,
     headers: {
       'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ export const checkoutOrder = (value, token, history) => (dispatch) => {
 export const getOrders = (token, id) => (dispatch) => {
   return axios({
     method: 'get',
-    url: `http://fffastapp.herokuapp.com/api/v1/users/${id}/orders`,
+    url: `${process.env.BASE_URL_PROD}/api/v1/users/${id}/orders`,
     headers: {
       'Content-Type': 'application/json',
       token,
@@ -90,7 +90,7 @@ export const getOrders = (token, id) => (dispatch) => {
 export const getAdminOrders = token => (dispatch) => {
   return axios({
     method: 'get',
-    url: 'http://fffastapp.herokuapp.com/api/v1/orders',
+    url: `${process.env.BASE_URL_PROD}/api/v1/orders`,
     headers: {
       'Content-Type': 'application/json',
       token,
@@ -111,7 +111,7 @@ export const getAdminOrders = token => (dispatch) => {
 export const deleteAnOrder = (id, token) => (dispatch) => {
   return axios({
     method: 'delete',
-    url: `https://fffastapp.herokuapp.com/api/v1/orders/${id}`,
+    url: `${process.env.BASE_URL_PROD}/api/v1/orders/${id}`,
     headers: {
       'Content-Type': 'application/json',
       token,
